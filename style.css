@@ -1,17 +1,6 @@
-.overlay{
-    position: relative;
-    display:inline-block;
-}
 
-.overlay img{
-    width: 500px; ;
-    display:block;
-    position: center;
-}
-
-.overlay-text{
-    position:absolute
-    text-align center;
-    color:#0606b7;
-    padding: 5px 10px;
+.nav-logo {
+  width: 160px;          /* adjust size as needed */
+  height: auto;
+  display: block;
 }
