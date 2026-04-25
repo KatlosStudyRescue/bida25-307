@@ -22,10 +22,14 @@ p {
   font-size: 17px;
   color: black;
   line-height: 1.6;
+   width: 80%;
+   margin: auto;
+   margin-top: 50px;
+   margin-bottom: 50px;
 }
 
 nav {
-  background-color: #D37F37;
+  background-color: #EE9425;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -46,6 +50,7 @@ nav a {
 
 nav a:hover {
   color: #1e2952;
+  text-underline-position: below;
 }
 
 header {
@@ -62,6 +67,7 @@ main {
 
 section {
   margin: 40px auto;
+  background-color: #F1EAE1;
 }
 
 section img {
@@ -125,19 +131,6 @@ footer {
 }
 
 footer p {
-  color: #D37F37;
+  color: #EE9425;
   font-size: 15px;
 }
-
-@media (max-width: 768px) {
-  nav {
-    flex-direction: column;
-  }
-
-  h1, h2, h3 {
-    font-size: 22px;
-  }
-
-  p {
-    font-size: 16px;
-  }
