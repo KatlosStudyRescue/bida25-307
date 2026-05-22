@@ -6,7 +6,10 @@
 }
 
 body {
-  background-color: white;
+  background-image: url(background.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -14,7 +17,14 @@ body {
 
 h1, h2, h3 {
   font-size: 24px;
-  color: #1e2952;
+  color: #660B05;
+  margin-bottom: 10px;
+  margin-top: 40px;
+}
+
+h4 {
+  font-size: 24px;
+  color:white;
   margin-bottom: 10px;
 }
 
@@ -29,27 +39,44 @@ p {
 }
 
 nav {
-  background-color: #EE9425;
+  background-color: #3E0703;
   display: flex;
   align-items: center;
-  justify-content: center;
-  padding: 15px;
-  gap: 20px;
+  justify-content: center; 
+padding: 15px;
   flex-wrap: wrap;
 }
 
-.nav-logo {
+nav ul {
+  width: 100%;
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+nav li {
   height: 50px;
 }
 
 nav a {
   text-decoration: none;
-  color: black;
+  color: #FFF0C4;
   font-size: 17px;
+  height: 100%;
+  padding: 0 30px;
+  display: flex;
+  align-items: center;
 }
 
 nav a:hover {
-  color: #1e2952;
+  color: #8C1007;
+  text-underline-position: below;
+}
+nav li:first-child {
+margin-right: auto;
+}
+
+nav a:active {
   text-underline-position: below;
 }
 
@@ -65,9 +92,27 @@ main {
   text-align: center;
 }
 
+.button{
+  display: inline-block;
+  margin-top: 20px;
+  text-decoration: none;
+  color: white;
+  background-color: #1e2952;
+  padding: 10px 20px;
+  border-radius: 4px;
+}
+            
+.button a:hover {
+  background-color: #EE9425;
+}
+
 section {
-  margin: 40px auto;
-  background-color: #F1EAE1;
+  width: 96%;
+  margin: 20px auto;
+  padding-top:2px ;
+  padding-bottom:2px ;
+  background: transparent;
+  backdrop-filter: blur(10px);
 }
 
 section img {
@@ -126,11 +171,39 @@ form textarea {
 footer {
   background-color: black;
   text-align: center;
-  padding: 15px;
+  padding: 10px;
   margin-top: auto;
 }
 
 footer p {
-  color: #EE9425;
+  color: #FFF0C4;
   font-size: 15px;
 }
+
+:root {
+  color-scheme: ligt;
+}
+
+@media (max-width: 1440px) {
+  nav {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 1024) {
+  nav {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 768px) {
+  nav {
+    flex-wrap: wrap;
+  }
+  form {
+    width: 95%;
+  }
+  .buttons {
+    font-size: 16px;
+  }
+  }
