@@ -137,7 +137,7 @@ section img {
 }
 
 form {
-  width: 90%;
+  width: 95%;
   max-width: 500px;
   margin: 40px auto;
   padding: 25px;
@@ -154,31 +154,35 @@ form label {
 form input,
 form textarea {
   width: 100%;
-  padding: 10px;
+  padding: 12px;
   margin-bottom: 15px;
   border: 1px solid #ccc;
   border-radius: 4px;
+  box-sizing: border-box;
 }
 
 .buttons {
   display: flex;
-  justify-content: space-between;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.submit-btn, .clear-btn { 
+  flex: 1; 
+  min-width: 120px; 
+  padding: 12px 20px; 
+  border: none; 
+  cursor: pointer; 
 }
 
 .submit-btn {
   background-color: #1e2952;
   color: white;
-  padding: 10px 20px;
-  border: none;
-  cursor: pointer;
 }
 
 .clear-btn {
   background-color: #ccc;
   color: black;
-  padding: 10px 20px;
-  border: none;
-  cursor: pointer;
 }
 
 footer {
@@ -217,4 +221,8 @@ nav a {
   padding: 12px; 
   width: 100%; 
 } 
+
+body {
+  padding-top: 90%;
+}
 }
